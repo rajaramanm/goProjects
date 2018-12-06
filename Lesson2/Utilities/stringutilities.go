@@ -51,3 +51,12 @@ func ConvertAStringToASlice(stringToConvertToArray string) []string {
 	stringArray = strings.Split(stringToConvertToArray, "")
 	return stringArray
 }
+
+// ConcatenateStrings ... concatenates the strings passed in the function
+func ConcatenateStrings(stringsToAdd ...string) string {
+	var newString string
+	for _, v := range stringsToAdd {
+		newString += v
+	}
+	return newString
+}

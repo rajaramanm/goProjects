@@ -54,7 +54,6 @@ MAINOPTION:
 			break
 
 		case 5:
-		default:
 			fmt.Println(Utils.ConcatenateStrings(fileName, location, requiredString))
 			break
 		}
@@ -84,7 +83,7 @@ MAINOPTION:
 			break
 
 		case 3:
-			Utils.ReadContentsFromFile(fileName, location)
+			fmt.Println(string(Utils.ReadContentsFromFile(fileName, location)))
 			break
 
 		case 4:
@@ -96,7 +95,7 @@ MAINOPTION:
 			break
 
 		case 6:
-			Utils.DeleteFile("trail.txt", "/Users/itrm1/GoProjects/Lesson2/")
+			Utils.DeleteFile("trial.txt", "/Users/itrm1/GoProjects/Lesson2/")
 			break
 		}
 		fmt.Println("Do you want Continue or go back to Main Menu?")
